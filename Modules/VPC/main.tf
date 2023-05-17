@@ -26,7 +26,7 @@ resource "aws_internet_gateway" "igw_threetier" {
   vpc_id = aws_vpc.threetiervpc.id
 
   tags = {
-    Name = "main"
+    Name = "main-IGW"
   }
 }
 
