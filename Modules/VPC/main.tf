@@ -20,7 +20,7 @@ resource "aws_subnet" "public_sub_1"{
     #tags = {
      #   Name = "Public Subnet AZ2"
     #}
-##}
+##}#
 
 resource "aws_internet_gateway" "igw_threetier" {
   vpc_id = aws_vpc.threetiervpc.id
