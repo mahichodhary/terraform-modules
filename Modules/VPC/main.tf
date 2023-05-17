@@ -6,7 +6,7 @@ resource "aws_vpc" "threetiervpc"{
 
 resource "aws_subnet" "public_sub_1"{
     vpc_id=aws_vpc.threetiervpc.id
-    cidr_block=var.pub_sub_cidr_1
+    cidr_block=var.pub_sub_cidr_1a
     availability_zone=var.az_1
     tags = {
         Name = "Public Subnet AZ1"
