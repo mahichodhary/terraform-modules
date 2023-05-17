@@ -5,7 +5,7 @@ variable "vpc_cidr" {
 }
 
 variable "az_1" {
-  description = "AZ for public subnet 1"
+  description = "AZ for public subnet 1a"
   type        = string
   default     = "us-east-1a"
 }
