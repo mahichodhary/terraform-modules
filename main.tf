@@ -1,5 +1,5 @@
 module "vpc" {
-  source   = "./VPC"
+  source   = "./Modules/VPC"
   vpc_cidr = var.vpc_cidr
   # sub_vpc_id=var.sub_vpc_id
   az_1             = var.az_1
