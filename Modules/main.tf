@@ -1,5 +1,5 @@
 module "vpc" {
-  source   = "git::https://github.com/terraform-modules/Vpc"
+  source   = "git::https://github.com/mahichodhary/terraform-modules/tree/main/Vpc"
   vpc_cidr = var.vpc_cidr
   # sub_vpc_id=var.sub_vpc_id
   az_1             = var.az_1
