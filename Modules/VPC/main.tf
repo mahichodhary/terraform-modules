@@ -13,7 +13,7 @@ resource "aws_subnet" "public_sub_1"{
     }
 }
 
-## resource "aws_subnet" "public_sub_2"{
+#resource "aws_subnet" "public_sub_2"{
   #  vpc_id=aws_vpc.threetiervpc.id
    # cidr_block=var.pub_sub_cidr_2
     #availability_zone=var.az_2
