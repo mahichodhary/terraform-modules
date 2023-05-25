@@ -13,3 +13,4 @@ output "pub_sub_1_id"{
 output "awsvpc_id"{
     value=aws_vpc.threetiervpc.id
 }
+#
