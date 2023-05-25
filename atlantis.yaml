@@ -11,6 +11,8 @@ projects:
 - name: project1-production
   dir: Modules
   workflow: production
+  allowed_overrides: [workflow]
+
 workflows:
   development:
     plan:
