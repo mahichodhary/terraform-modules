@@ -1,8 +1,8 @@
 version: 3
 projects:
-- dir: Modules
+- dir: /*/
   autoplan:
-    when_modified: ["../VPC/**/*.tf", "*.tf*"]
+    when_modified: ["../VPC/**/*.tf", "*.tf*","./Modules/*.tf"]
 # If two or more projects have the same dir and workspace, they must also have
 # a 'name' key to differentiate them.
 - name: project1-development
