@@ -18,18 +18,18 @@ workflows:
       steps:
       - init
       - plan:
-          extra_args: ["-var-file", "prod-terraform.tfvars"]
+          extra_args: ["-var-file", "dev-terraform.tfvars"]
     # NOTE: no need to define the apply stage because it will default
     # to the normal apply stage.
     apply:
       steps:
         - apply:
-            extra_args: ["-var-file", "prod-terraform.tfvars"]
+            extra_args: ["-var-file", "dev-terraform.tfvars"]
     import:
       steps:
         - init
         - import:
-            extra_args: ["-var-file", "prod-terraform.tfvars"]
+            extra_args: ["-var-file", "dev-terraform.tfvars"]
     state_rm:
       steps:
         - init
