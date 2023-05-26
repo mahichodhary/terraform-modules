@@ -1,6 +1,6 @@
 version: 3
 projects:
-- dir: Modules/EC2
+- dir: .
   autoplan:
     when_modified: ["../EC2/**/*.tf", "*.tf*"]
 # If two or more projects have the same dir and workspace, they must also have
