@@ -46,5 +46,12 @@ resource "aws_route_table_association" "public_sub_assoc_1" {
   #gateway_id     = aws_internet_gateway.igw_threetier.id
   route_table_id = aws_route_table.public_rt.id
 }
+resource "aws_instance" "app_server" {
+  ami           = "ami-4753878466"
+  instance_type = "t2.micro"
 
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
+}
 
